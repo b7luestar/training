@@ -3,7 +3,7 @@ using System.Net.Http;
 
 namespace DependencyInjectionWorkshop.Models
 {
-    public class FailCounter
+    public class FailCounter : IFailCounter
     {
         public bool GetIsAccountLocked(string account)
         {

@@ -3,12 +3,8 @@ using System.Net.Http;
 
 namespace DependencyInjectionWorkshop.Models
 {
-    public class OtpService
+    public class OtpService : IOtpService
     {
-        public OtpService()
-        {
-        }
-
         public string GetOtp(string account)
         {
             var response = new HttpClient() { BaseAddress = new Uri("http://joey.com/") }.PostAsJsonAsync("api/otps", account).Result;

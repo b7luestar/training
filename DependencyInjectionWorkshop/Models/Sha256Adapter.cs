@@ -2,7 +2,7 @@
 
 namespace DependencyInjectionWorkshop.Models
 {
-    public class Sha256Adapter
+    public class Sha256Adapter : IHashAdapter
     {
         public string ComputeHash(string input)
         {
@@ -14,8 +14,7 @@ namespace DependencyInjectionWorkshop.Models
                 hash.Append(theByte.ToString("x2"));
             }
 
-            var hashPassword = hash.ToString();
-            return hashPassword;
+            return hash.ToString();
         }
     }
 }

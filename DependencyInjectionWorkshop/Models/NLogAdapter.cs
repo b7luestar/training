@@ -2,7 +2,7 @@
 
 namespace DependencyInjectionWorkshop.Models
 {
-    public class NLogAdapter
+    public class NLogAdapter : ILogger
     {
         private readonly Logger _Logger;
 
