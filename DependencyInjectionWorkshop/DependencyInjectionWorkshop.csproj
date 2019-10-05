@@ -75,7 +75,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\ProfileDao.cs" />
     <Compile Include="Models\AuthenticationService.cs" />
+    <Compile Include="Models\Sha256Adapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
