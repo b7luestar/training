@@ -5,7 +5,7 @@ namespace DependencyInjectionWorkshop.Models
 {
     public class FailCounter : IFailCounter
     {
-        public bool GetIsAccountLocked(string account)
+        public bool IsAccountLocked(string account)
         {
             var isLockedResponse = new HttpClient() { BaseAddress = new Uri("http://joey.com/") }.PostAsJsonAsync("api/failedCounter/IsLocked", account).Result;
 

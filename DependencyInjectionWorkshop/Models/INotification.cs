@@ -2,6 +2,6 @@
 {
     public interface INotification
     {
-        void Nodify(string message);
+        void Notify(string message);
     }
 }

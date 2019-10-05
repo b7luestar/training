@@ -2,6 +2,6 @@
 {
     public interface IOtpService
     {
-        string GetOtp(string account);
+        string GetCurrentOtp(string account);
     }
 }
